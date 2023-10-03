@@ -1,0 +1,8 @@
+<h1><%= @album.title %></h1>
+<h2><%= @album.year %></h2>
+<% @tracks.each do |track| %>
+    <p><%= track.title %></p>
+<% end %>
+
+<a href="<%= new_album_track_url(@album) %>">Make a track</a>
+

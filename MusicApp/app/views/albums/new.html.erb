@@ -1,0 +1,19 @@
+<h1>Make an album!</h1>
+
+<form action="<%= band_albums_url %>" method="POST">
+    
+    <label for="">Title
+        <input type="text" name="album[title]">
+    </label>
+    <label for="">Year
+        <input type="number" name="album[year]">
+    </label>
+    <label for="">Is this a Studio recording?
+        <select name="album[is_studio_recording]" id="">
+            <option value="True">True</option>
+            <option value="False">False</option>
+        </select>
+    </label>
+    <input type="submit" value="Drop the Album">
+</form>
+

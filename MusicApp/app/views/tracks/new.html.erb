@@ -1,0 +1,17 @@
+<h1>Drop the single</h1>
+
+<form action="<%= album_tracks_url %>" method="POST">
+    <label for="">Title
+        <input type="text" name="track[title]">
+    </label>
+    <label for="">Ord
+        <input type="number" name="track[ord]">
+    </label>
+    <label for="">Is Regular?
+        <select name="track[is_regular]" id="">
+            <option value="True">True</option>
+            <option value="False">False</option>
+        </select>
+    </label>
+    <input type="submit" value="Drop the Single">
+</form>
